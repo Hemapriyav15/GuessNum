@@ -1,0 +1,28 @@
+body{
+    font-family: "Lobster", sans-serif;
+    padding-top: 130px;
+    background-image: url('numbers.jpg');
+    background-size:cover ;
+    background-position: center;
+}
+input{
+    width:30px;
+    height: 25px;
+}
+button{
+    width:60px;
+    height: 28px;
+    font-family: "Lobster", sans-serif;
+}
+button:hover{
+    background-color: green;
+    color:white;
+}
+.num{
+    background-color:black;
+    color:wheat;
+    height:280px;
+    width:500px;
+    padding-top: 60px;
+    border-radius:50%;
+}

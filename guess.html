@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess it🤩</title>
+    <link rel="stylesheet" href="guess.css">
+    <link rel="icon" href="89hhNVMso4GAq9brZwJJFW-1200-80.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playwrite+BE+WAL:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <center>
+        <div class="num">
+        <h1>Guess the Number😉🤩</h1>
+        <input id="guess" type="number" min="1" max="10">
+        <button onclick="check()">Check</button>
+        <p id="result">You are right / wrong...</p>
+        <p id="totalscore">Score: 10</p>
+        <script>
+            // Selecting input box, paragraphs, and other necessary elements
+            var g = document.getElementById("guess");
+            var r = document.getElementById("result");
+            var score = document.getElementById("totalscore");
+            var randomNumber = Math.floor(Math.random() * 10) + 1;
+            var totalscore = 10;
+
+            function check() {
+                var enterednumber = g.value;
+                if (enterednumber === randomNumber) {
+                    console.log(randomNumber);
+                    r.textContent = "Right!";
+                    alert("Woww,Great you won🥳");
+                } else {
+                    totalscore--;
+                    score.textContent = "Score: " + totalscore;
+                    r.textContent = "Wrong!";
+                    alert("Its okay,Try next time🤝");
+                }
+            }
+        </script>
+        </div>
+    </center>
+</body>
+</html>
